@@ -1,0 +1,18 @@
+{
+  "raw_rows": 292,
+  "expected_measurements": 288,
+  "exact_duplicate_rows": 4,
+  "unique_rows_after_exact_dedup": 288,
+  "unique_culture_day_keys": 288,
+  "duplicate_culture_day_key_rows": 0,
+  "missing_od680_rows": 4,
+  "negative_od680_rows": 1,
+  "iqr_flagged_rows": 15,
+  "valid_numeric_rows": 283,
+  "endpoint_day": 7,
+  "n_20C_day7": 18,
+  "n_25C_day7": 18,
+  "mean_20C_day7": 0.6540222222222221,
+  "mean_25C_day7": 0.8685,
+  "welch_p_value_day7": 3.3923907740658404e-14
+}

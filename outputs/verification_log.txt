@@ -1,0 +1,76 @@
+PASS | input raw row count | observed=292
+PASS | exact duplicate rows | observed=4
+PASS | unique rows after dedup | observed=288
+PASS | missing OD680 | observed=4
+PASS | negative OD680 | observed=1
+PASS | unique culture-day keys | unique=288, remaining_duplicate_rows=0
+PASS | quality_report:raw_rows | expected=292; observed=292
+PASS | quality_report:expected_measurements | expected=288; observed=288
+PASS | quality_report:exact_duplicate_rows | expected=4; observed=4
+PASS | quality_report:unique_rows_after_exact_dedup | expected=288; observed=288
+PASS | quality_report:unique_culture_day_keys | expected=288; observed=288
+PASS | quality_report:duplicate_culture_day_key_rows | expected=0; observed=0
+PASS | quality_report:missing_od680_rows | expected=4; observed=4
+PASS | quality_report:negative_od680_rows | expected=1; observed=1
+PASS | quality_report:iqr_flagged_rows | expected=15; observed=15
+PASS | quality_report:valid_numeric_rows | expected=283; observed=283
+PASS | summary has 16 temperature-day rows | observed=16
+PASS | summary n (25, 7) | expected=18, observed=18
+PASS | summary mean (25, 7) | expected=0.86850000, observed=0.86850000
+PASS | summary sample sd (25, 7) | expected=0.05215589, observed=0.05215589
+PASS | summary n (20, 5) | expected=18, observed=18
+PASS | summary mean (20, 5) | expected=0.57629444, observed=0.57629444
+PASS | summary sample sd (20, 5) | expected=0.17993055, observed=0.17993055
+PASS | summary n (20, 0) | expected=18, observed=18
+PASS | summary mean (20, 0) | expected=0.08595556, observed=0.08595556
+PASS | summary sample sd (20, 0) | expected=0.01116287, observed=0.01116287
+PASS | summary n (25, 1) | expected=17, observed=17
+PASS | summary mean (25, 1) | expected=0.12860000, observed=0.12860000
+PASS | summary sample sd (25, 1) | expected=0.02327539, observed=0.02327539
+PASS | summary n (20, 4) | expected=17, observed=17
+PASS | summary mean (20, 4) | expected=0.42860588, observed=0.42860588
+PASS | summary sample sd (20, 4) | expected=0.02433764, observed=0.02433764
+PASS | summary n (20, 7) | expected=18, observed=18
+PASS | summary mean (20, 7) | expected=0.65402222, observed=0.65402222
+PASS | summary sample sd (20, 7) | expected=0.05137653, observed=0.05137653
+PASS | summary n (25, 3) | expected=18, observed=18
+PASS | summary mean (25, 3) | expected=0.37186667, observed=0.37186667
+PASS | summary sample sd (25, 3) | expected=0.03541577, observed=0.03541577
+PASS | summary n (20, 6) | expected=17, observed=17
+PASS | summary mean (20, 6) | expected=0.60927647, observed=0.60927647
+PASS | summary sample sd (20, 6) | expected=0.04587466, observed=0.04587466
+PASS | summary n (25, 4) | expected=18, observed=18
+PASS | summary mean (25, 4) | expected=0.55259444, observed=0.55259444
+PASS | summary sample sd (25, 4) | expected=0.04665717, observed=0.04665717
+PASS | summary n (20, 3) | expected=17, observed=17
+PASS | summary mean (20, 3) | expected=0.30524706, observed=0.30524706
+PASS | summary sample sd (20, 3) | expected=0.02661703, observed=0.02661703
+PASS | summary n (20, 1) | expected=18, observed=18
+PASS | summary mean (20, 1) | expected=0.12193333, observed=0.12193333
+PASS | summary sample sd (20, 1) | expected=0.01366485, observed=0.01366485
+PASS | summary n (25, 0) | expected=18, observed=18
+PASS | summary mean (25, 0) | expected=0.07956667, observed=0.07956667
+PASS | summary sample sd (25, 0) | expected=0.01403374, observed=0.01403374
+PASS | summary n (25, 2) | expected=18, observed=18
+PASS | summary mean (25, 2) | expected=0.21588889, observed=0.21588889
+PASS | summary sample sd (25, 2) | expected=0.05657552, observed=0.05657552
+PASS | summary n (25, 6) | expected=18, observed=18
+PASS | summary mean (25, 6) | expected=0.81151111, observed=0.81151111
+PASS | summary sample sd (25, 6) | expected=0.04385617, observed=0.04385617
+PASS | summary n (25, 5) | expected=17, observed=17
+PASS | summary mean (25, 5) | expected=0.70743529, observed=0.70743529
+PASS | summary sample sd (25, 5) | expected=0.04562773, observed=0.04562773
+PASS | summary n (20, 2) | expected=18, observed=18
+PASS | summary mean (20, 2) | expected=0.19360000, observed=0.19360000
+PASS | summary sample sd (20, 2) | expected=0.01797253, observed=0.01797253
+PASS | artifact exists: quality_report.csv | exists=True, size=826
+PASS | artifact exists: quality_flags.csv | exists=True, size=994
+PASS | artifact exists: summary.csv | exists=True, size=1202
+PASS | artifact exists: endpoint_comparison.csv | exists=True, size=459
+PASS | artifact exists: comparison.png | exists=True, size=450730
+PASS | artifact exists: report.md | exists=True, size=2693
+PASS | artifact exists: verify.py | exists=True, size=7442
+PASS | report discloses synthetic data
+PASS | comparison plot dimensions | 3301x1320
+
+Result: 74/74 checks passed.

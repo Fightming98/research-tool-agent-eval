@@ -1,0 +1,11 @@
+metric,value,interpretation
+raw_rows,292,原始CSV行数，包含重复记录
+expected_measurements,288,设计规模：2个温度×18个培养重复×8个观测日
+exact_duplicate_rows,4,完全重复的整行记录；分析时保留首条
+unique_rows_after_exact_dedup,288,删除完全重复行后的记录数
+unique_culture_day_keys,288,培养编号×观测日的唯一组合数
+duplicate_culture_day_key_rows,0,去除完全重复行后，仍有重复的培养编号×观测日记录数
+missing_od680_rows,4,OD680缺失；不插补，不参与数值统计
+negative_od680_rows,1,OD680为负；作为物理无效值标记并排除统计
+iqr_flagged_rows,15,按温度×观测日分组、线性四分位数和1.5×IQR规则标记；主分析保留
+valid_numeric_rows,283,去重后同时满足非缺失与非负条件的记录数
